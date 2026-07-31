@@ -1,0 +1,350 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+body.gray-theme {
+    background-color: #414141;
+}
+
+body.white-theme {
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #b5b5b5;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #ff8c32;
+}
+
+/*================== Buttons  ===============*/
+/* The switch - the box around the slider */
+.switch-wrapper {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f8dc52;;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*================== Profile Picture ===============*/
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.bio-box {
+    background-color: #ff8c32;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 2;
+    min-height: 150px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+
+.profile-picture img {
+    top: 0%;
+    display: block;
+    width: 180px;   /* or whatever size you want */
+    height: auto;
+}
+
+
+/* The container holding both image and text */
+
+ /* Text CSS */
+.TechnicalSkills-overlay{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.skills-header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    position: relative;
+    display: inline-block;
+}
+
+.skills-header img{
+    top: 10%;
+    margin-left: 35px;
+    display: block;
+    width: 350px;   /* or whatever size you want */
+    height: auto;
+}
+
+/* =================================
+   SKILLS GRID
+================================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   COMMON SKILL BOX
+================================= */
+
+.skills-list-box,
+.APIskills-list-box,
+.DBskills-list-box ,
+.NetHardwareskills-list-box,
+.Otherskills-list-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+/* =================================
+   BRUSH IMAGES
+================================= */
+
+.skills-list-box img,
+.APIskills-list-box img,
+.DBskills-list-box img ,
+.NetHardwareskills-list-box img,
+.Otherskills-list-box{
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+
+/* =================================
+   PROGRAMMING LANGUAGES
+================================= */
+
+.Progrlangheader {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.SkillList {
+    font-size: 20px;
+    color: rgb(242, 11, 11);
+    margin-bottom: 10px;
+}
+
+.Skills {
+    margin-top: 0;
+}
+
+
+/* =================================
+   API
+================================= */
+
+.APIheader {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.APISkillList {
+    font-size: 20px;
+    color: rgb(242, 11, 11);
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   DATABASE
+================================= */
+
+.DBheader {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.DBSkillList {
+    font-size: 20px;
+    color: rgb(32, 192, 255);
+    margin-bottom: 10px;
+}
+
+/* =================================
+   NETWORK
+================================= */
+
+.NetHardwareheader {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.NetwordSkillList {
+    font-size: 20px;
+    color: rgb(32, 192, 255);
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   NETWORK
+================================= */
+
+.Otherheader {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.OtherSkillList {
+    font-size: 20px;
+    color: rgb(32, 192, 255);
+    margin-bottom: 10px;
+}
+
+

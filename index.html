@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Page Template</title>
+    <link rel="stylesheet" href="Portfolio2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#personal-info">Personal Info</a>
+        <a href="#technical-skills">Technical Skills</a>
+        <a href="#job-experience">Job Experience</a>
+        <a href="#about-me">About Me</a>
+    </nav>
+
+    <div class="switch-wrapper">
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <section class="profile-container" id="personal-info">
+        <div class="bio-box">
+            <p>
+                Software Developer with foundational knowledge in application development and hands-on professional experience as an Implementation Consultant. Possesses basic programming skills and understanding of software development concepts, including APIs, databases, and system configuration. Experienced in translating business requirements into technical solutions, troubleshooting system issues, and supporting deployments. Eager to further develop coding expertise while contributing to building reliable and efficient software solutions within a collaborative development environment.
+            </p>
+        </div>
+
+        <div class="profile-picture">
+            <img src="Profile_Pic.png" alt="Profile picture">
+        </div>
+    </section>
+
+    <section class="image-overlay-container" id="technical-skills">
+        <div class="skills-header">
+            <img src="OrangeBrush2.png" alt="Technical Skills">
+            <div class="TechnicalSkills-overlay">Technical Skills</div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skills-list-box">
+                <div class="Progrlangheader">
+                    <div class="SkillList">Programming Languages</div>
+                    <ul class="Skills">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>T-SQL</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <img src="Blue BrushNBG.png" alt="Blue Brush">
+            </div>
+
+            <div class="APIskills-list-box">
+                <div class="APIheader">
+                    <div class="APISkillList">API</div>
+                    <ul class="APISkills">
+                        <li>SigningHub</li>
+                        <li>eMsigner</li>
+                    </ul>
+                </div>
+                <img src="Blue BrushNBG.png" alt="Blue Brush">
+            </div>
+
+            <div class="DBskills-list-box">
+                <div class="DBheader">
+                    <div class="DBSkillList">Database Management</div>
+                    <ul class="DBSkills">
+                        <li>Microsoft SQL Server (SSMS)</li>
+                        <li>Data Migration & Extraction</li>
+                        <li>Query Optimization</li>
+                    </ul>
+                </div>
+                <img src="RedBrushNBG.png" alt="Red Brush">
+            </div>
+
+            <div class="NetHardwareskills-list-box">
+                <div class="NetHardwareheader">
+                    <div class="NetwordSkillList">Networking & Hardware</div>
+                    <ul class="NetHardwareSkills">
+                        <li>LAN Installation</li>
+                        <li>System Setup</li>
+                    </ul>
+                </div>
+                <img src="RedBrushNBG.png" alt="Red Brush">
+            </div>
+
+            <div class="Otherskills-list-box">
+                <div class="Otherheader">
+                    <div class="OtherSkillList">Other Skills</div>
+                    <ul class="OtherSkills">
+                        <li>Troubleshooting</li>
+                        <li>Documentation</li>
+                        <li>Process Automation</li>
+                    </ul>
+                </div>
+                <img src="RedBrushNBG.png" alt="Red Brush">
+            </div>
+        </div>
+    </section>
+
+    <section id="job-experience" style="max-width: 800px; margin: 0 auto 40px; padding: 0 20px;">
+        <h2>Job Experience</h2>
+        <p>Implementation Consultant with practical experience translating business needs into reliable technical solutions.</p>
+    </section>
+
+    <section id="about-me" style="max-width: 800px; margin: 0 auto 60px; padding: 0 20px;">
+        <h2>About Me</h2>
+        <p>I enjoy building useful software, learning new technologies, and working with teams to solve real-world problems.</p>
+    </section>
+
+    <script>
+        const themeSwitch = document.getElementById('themeSwitch');
+        const body = document.body;
+        const updateTheme = () => {
+            body.classList.toggle('white-theme', themeSwitch.checked);
+            body.classList.toggle('gray-theme', !themeSwitch.checked);
+        };
+        themeSwitch.addEventListener('change', updateTheme);
+        updateTheme();
+    </script>
+</body>
+</html>
